@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=HackRF Tools
+Comment=Numbered menu for HackRF + kalibrate, gqrx/sdrpp/inspectrum + GR-GSM (scanner, livemon, decode, GSMTAP to Wireshark). No command typing needed.
+Exec=/home/will/bin/launch-hackrf-menu.sh
+TryExec=/home/will/bin/launch-hackrf-menu.sh
+Icon=/home/will/Pictures/hackrf1.png
+Terminal=false
+Categories=Utility;Network;HamRadio;AudioVideo;Science;
+Keywords=hackrf;sdr;radio;kalibrate;gsm;kal;inspectrum;gqrx;sdrpp;software defined radio;
+StartupNotify=true

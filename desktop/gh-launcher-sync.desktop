@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GitHub Launcher Sync
+GenericName=GitHub Sync
+Comment=Collect custom Kali desktop launchers and companion scripts, then push to GitHub via gh CLI when you choose
+Exec=/home/will/bin/gh-launcher-sync/launch.sh
+TryExec=/home/will/bin/gh-launcher-sync/launch.sh
+Icon=/home/will/.local/share/icons/gh-launcher-sync.svg
+Terminal=false
+Categories=Development;Utility;System;
+Keywords=github;gh;git;sync;launcher;desktop;kali;backup;scripts;
+StartupNotify=true
+X-GNOME-Autostart-enabled=false
+NoDisplay=false

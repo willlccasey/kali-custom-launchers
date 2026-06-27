@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor Browser - New Identity
+Comment=Launch Tor Browser with a completely fresh circuit & identity
+Exec=/home/will/.local/bin/tor-browser-new-identity
+Icon=/usr/share/icons/hicolor/128x128/apps/org.torproject.torbrowser-launcher.png
+Terminal=false
+Categories=Network;Security;Privacy;
+StartupNotify=true
+Keywords=tor;new identity;newnym;fresh circuit;

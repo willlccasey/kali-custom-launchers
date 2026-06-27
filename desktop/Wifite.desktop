@@ -1,0 +1,44 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Wifite
+Comment=WiFi auditor launcher — Full attacks + powerful offline "Crack Only" mode for previous handshakes (no monitor mode)
+Icon=kali-wifite
+Exec=/home/will/bin/wifite-launcher/launch.sh
+Terminal=false
+Categories=Network;Security;
+Keywords=kali;wifi;wifite;handshake;pmkid;crack;aircrack;hashcat;pentest;wireless;
+# Note: Internal WiFi (wlan0) is protected. Use external card (wlan1) for monitor mode attacks.
+StartupNotify=true
+X-GNOME-Autostart-enabled=false
+NoDisplay=false
+
+# Wifite Desktop Launcher
+#
+# Two powerful modes:
+#
+# 1. "Crack Handshakes Only (Offline)"  [the star feature]
+#    - No monitor mode, no packet injection
+#    - Scans any hs/ directory for .cap (4-way) and .22000 (PMKID) files
+#    - Beautiful list with ESSID / BSSID / Type / Date
+#    - Multi-select handshakes to crack
+#    - Choose wordlist (auto-discovers rockyou, probable, fasttrack, wifite.txt etc.)
+#    - One-click "Extract rockyou" helper for the gzipped version
+#    - Choose tool: hashcat (recommended, handles PMKID + fast) or aircrack-ng
+#    - Live output + progress while cracking
+#    - Automatically saves successes to cracked.json (wifite format)
+#
+# 2. "Full Wifite Attack (Monitor Mode)"
+#    - Configure common flags before launch (--kill, --random-mac, --pmkid, --wps-only, etc.)
+#    - Pick wordlist + custom hs-dir
+#    - Target filters (ESSID/BSSID/channel)
+#    - "Pillage" (auto-attack after N seconds)
+#    - Launches in a real terminal (best for interactive use)
+#    - Command preview + "Copy command" button
+#
+# Also includes:
+# - View previously cracked APs
+# - Check any .cap file for handshakes (wifite --check)
+# - Quick open hs/ folders
+#
+# For authorized testing only. Use responsibly.

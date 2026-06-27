@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+#
+# Tor Browser (Onion) - Smart One-Click Launcher
+# - Starts system Tor only if possible without password prompt
+# - Waits for actual Tor connectivity (falls back gracefully)
+# - Launches Tor Browser
+# - Automatically upgrades to the real Tor Browser icon after first download
+
+set -euo pipefail
+
+ICON_UPDATER="$HOME/.local/bin/update-tor-browser-icon"
+
+# Try to upgrade icon at launch time
+if [ -x "$ICON_UPDATER" ]; then
+    "$ICON_UPDATER" >/dev/null 2>&1 || true
+fi
+
+# Only try to start system Tor if we can do it without a password prompt
+# (very important for desktop launcher clicks)
+if command -v systemctl >/dev/null 2>&1; then
+    if systemctl list-unit-files 2>/dev/null | grep -q '^tor.service'; then
+        if ! systemctl is-active --quiet tor 2>/dev/null; then
+            if sudo -n systemctl start tor 2>/dev/null; then
+                echo "[*] Started system Tor service"
+            else
+                # Silent - torbrowser-launcher will use its own bundled Tor
+                true
+            fi
+        fi
+    fi
+fi
+
+# Wait for Tor connectivity (this works whether using system tor or bundled)
+echo "[*] Ensuring Tor network is ready..."
+if ! curl --max-time 4 --socks5-hostname 127.0.0.1:9050 -s https://check.torproject.org/api/ip 2>/dev/null | grep -q '"IsTor":true'; then
+    timeout=45
+    elapsed=0
+    echo -n "[*] Bootstrapping Tor "
+    while [ $elapsed -lt $timeout ]; do
+        if curl --max-time 5 --socks5-hostname 127.0.0.1:9050 -s https://check.torproject.org/api/ip 2>/dev/null | grep -q '"IsTor":true'; then
+            echo " [CONNECTED]"
+            break
+        fi
+        echo -n "."
+        sleep 2
+        elapsed=$((elapsed + 2))
+    done
+    [ $elapsed -ge $timeout ] && echo " [proceeding anyway]"
+fi
+
+# Launch Tor Browser (torbrowser-launcher bundles its own Tor if system one isn't ready)
+torbrowser-launcher "$@" &
+
+# Background icon upgrade checker (for after first download)
+(
+    sleep 45
+    if [ -x "$ICON_UPDATER" ]; then
+        "$ICON_UPDATER" >/dev/null 2>&1 || true
+    fi
+) &
+
+exit 0

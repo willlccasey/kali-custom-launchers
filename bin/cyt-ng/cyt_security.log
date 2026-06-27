@@ -1,0 +1,24 @@
+2026-06-13 10:24:35,527 - INFO - Configuration loaded with secure credential management
+2026-06-13 10:24:35,527 - WARNING - MAC ignore list not found: ignore_lists/mac_list.py
+2026-06-13 10:24:35,527 - WARNING - SSID ignore list not found: ignore_lists/ssid_list.py
+2026-06-13 10:24:35,528 - INFO - Securely loaded 0 MAC addresses and 0 SSIDs
+2026-06-13 10:24:35,528 - INFO - Using Kismet database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:24:35,528 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:24:35,529 - INFO - Database contains 0 devices
+2026-06-13 10:24:35,529 - INFO - Starting secure CYT monitoring loop...
+2026-06-13 10:24:35,530 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:25:35,530 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:26:35,531 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:27:35,532 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:28:35,533 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:28:35,533 - INFO - Rotating tracking lists (cycle 5)
+2026-06-13 10:29:35,533 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:30:35,534 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:31:35,535 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:32:35,536 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:33:35,536 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:33:35,537 - INFO - Rotating tracking lists (cycle 10)
+2026-06-13 10:34:35,537 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:35:35,538 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:36:35,539 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet
+2026-06-13 10:37:35,540 - INFO - Connected to database: /home/will/Kismet-20260612-19-59-45-1.kismet

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ubertooth-util
+Comment=Graphical menu for Ubertooth tools. After plugging in: choose Prepare first (brings up dongle + USB exclusive + hci). Point and click.
+Exec=/home/will/.local/bin/ubertooth-gui
+Icon=kali-menu
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=kali-bluetooth
+X-Kali-Package=ubertooth

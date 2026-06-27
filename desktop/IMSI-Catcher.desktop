@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IMSI-Catcher
+Comment=IMSI catcher (GSM). Menu for simple_IMSI-catcher.py, livemon integration, Wireshark etc. HackRF + gr-gsm friendly.
+Exec=/home/will/bin/launch-imsi-catcher-menu.sh
+TryExec=/home/will/bin/launch-imsi-catcher-menu.sh
+Icon=/home/will/Pictures/PHONE.png
+Terminal=false
+Categories=Utility;Network;HamRadio;Science;AudioVideo;
+Keywords=imsi;imsi-catcher;gsm;gr-gsm;hackrf;livemon;gsmtap;wireshark;sdr;
+StartupNotify=true

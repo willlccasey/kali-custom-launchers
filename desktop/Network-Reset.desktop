@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Network Reset
+Comment=Reset for monitor mode on ASUS. All cards go down (current desired behavior). Use --safe for old gentler mode.
+Icon=preferences-system-network
+Exec=/home/will/network-reset.sh
+Terminal=false
+Categories=Network;System;Security;
+StartupNotify=true
+X-GNOME-Autostart-enabled=false
+Keywords=monitor;wifi;reset;network;airmon;nmcli;kali;

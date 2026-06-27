@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+# Shared launcher for Grok desktop shortcuts.
+# Keeps terminator + grok invocation in one place so .desktop files stay reliable.
+
+set -euo pipefail
+
+GROK_BIN="${GROK_BIN:-/home/will/.grok/bin/grok}"
+WORKDIR="${GROK_WORKDIR:-/home/will}"
+TITLE="${GROK_TITLE:-Grok}"
+GROK_ARGS=()
+
+usage() {
+    cat <<'EOF'
+Usage: grok-launch [--title NAME] [--workdir PATH] [--] [grok args...]
+
+Examples:
+  grok-launch --title "Grok Build" -- grok
+  grok-launch --title "Grok Composer 2.5" -- grok -m grok-composer-2.5-fast
+  grok-launch --title "Grok Build (YOLO)" -- grok --yolo
+EOF
+}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --title)
+            TITLE="${2:-$TITLE}"
+            shift 2
+            ;;
+        --workdir)
+            WORKDIR="${2:-$WORKDIR}"
+            shift 2
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        --)
+            shift
+            GROK_ARGS=("$@")
+            break
+            ;;
+        *)
+            GROK_ARGS=("$@")
+            break
+            ;;
+    esac
+done
+
+if [[ ! -x "$GROK_BIN" ]]; then
+    echo "ERROR: Grok binary not found or not executable: $GROK_BIN" >&2
+    exit 1
+fi
+
+if ! command -v terminator >/dev/null 2>&1; then
+    echo "ERROR: terminator is required for Grok desktop launchers." >&2
+    exit 1
+fi
+
+# Reuse one terminator profile per launcher title.
+PROFILE_SLUG="$(printf '%s' "$TITLE" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9' '-')"
+
+if [[ ${#GROK_ARGS[@]} -eq 0 ]]; then
+    GROK_ARGS=("$GROK_BIN")
+else
+    GROK_ARGS=("$GROK_BIN" "${GROK_ARGS[@]}")
+fi
+
+GROK_CMD="$(printf '%q ' "${GROK_ARGS[@]}")"
+GROK_CMD="${GROK_CMD% }"
+
+exec terminator \
+    -u \
+    -r "$PROFILE_SLUG" \
+    --working-directory="$WORKDIR" \
+    --title="$TITLE" \
+    -x bash -lc "${GROK_CMD}; exec bash"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Bluetooth Tools
+Comment=Bluetooth Tools desktop launcher with GUI dropdown/list of numbered command selections. Choose from the list (no typing in shell), it runs the action (usually opens a terminal for interactive tools). Covers btscanner, Kismet nRF, HackRF, Sniffer USB Manager (Ubertooth+Raytac+HackRF), etc.
+Exec=/home/will/bin/bluetooth-zenity.sh
+TryExec=/home/will/bin/bluetooth-zenity.sh
+Icon=bluetooth
+Terminal=false
+Categories=Utility;Network;HamRadio;Security;
+Keywords=bluetooth;bt;ble;nrf;raytac;mdbt50;sniffer;ubertooth;blue-hydra;btscanner;kismet;crackle;warfare;recon;
+StartupNotify=true

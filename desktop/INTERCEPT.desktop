@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=INTERCEPT
+Comment=INTERCEPT - One-click: starts server + auto-opens browser to localhost. No terminal, no password prompt (passwordless sudo configured). Auto-kills stale processes.
+Icon=/home/will/intercept/static/icons/icon-192.png
+Exec=/home/will/intercept/launch.sh
+Terminal=false
+Categories=Network;HamRadio;Security;
+StartupNotify=true

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Grok Build (YOLO)
+Comment=Grok Build in Always Approve / YOLO mode
+GenericName=AI Coding Agent
+Exec=/home/will/.local/bin/grok-launch --title "Grok Build (YOLO)" --workdir /home/will -- --yolo
+Icon=/home/will/Pictures/grok.png
+Terminal=false
+Type=Application
+Categories=Development;
+Keywords=AI;Grok;xAI;YOLO;Coding;Terminal;CLI;
+StartupNotify=true
+StartupWMClass=terminator

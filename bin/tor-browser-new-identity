@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# Tor Browser - New Identity
+# Gets a completely fresh Tor circuit + new browser identity.
+
+set -euo pipefail
+
+echo "[*] Requesting new Tor identity..."
+
+# Try to send NEWNYM signal to system tor
+if command -v nc >/dev/null 2>&1; then
+    echo -e 'AUTHENTICATE\r\nSIGNAL NEWNYM\r\nQUIT\r\n' | nc -w 3 127.0.0.1 9051 2>/dev/null || true
+fi
+
+# Kill any existing torbrowser processes to force fresh circuits
+pkill -f "firefox.real.*tor" 2>/dev/null || true
+sleep 1
+
+echo "[*] Launching Tor Browser with fresh identity..."
+exec torbrowser-launcher "$@"

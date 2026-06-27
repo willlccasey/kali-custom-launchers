@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=USB Manager
+Comment=Switch between Ubertooth/nRF/Onboard BT + one-click full optimization (passwordless sudo + auto-ready devices)
+Exec=/home/will/bin/sniffer-usb-manager/launch.sh
+Icon=bluetooth
+Terminal=false
+Categories=Utility;System;HamRadio;
+StartupNotify=true
+Keywords=ubertooth;nrf;sniffer;bluetooth;usb;wireless;radio;wardriving;
+MimeType=
+NoDisplay=false

@@ -1,0 +1,44 @@
+# Collected 2026-06-27T12:28:20-05:00 from will-Lenovo-V15-G2-IJL
+# Custom launchers (Exec/TryExec under /home/will)
+
+desktop/Chasing-Your-Tail-NG.desktop  <-  /home/will/Desktop/Chasing-Your-Tail-NG.desktop
+desktop/Network-Reset.desktop  <-  /home/will/Desktop/Network-Reset.desktop
+desktop/Viking-GPS.desktop  <-  /home/will/Desktop/Viking-GPS.desktop
+desktop/Bluetooth-Tools.desktop  <-  /home/will/Desktop/Bluetooth-Tools.desktop
+desktop/INTERCEPT.desktop  <-  /home/will/Desktop/INTERCEPT.desktop
+desktop/grok-yolo.desktop  <-  /home/will/Desktop/grok-yolo.desktop
+desktop/Jam-Fi.desktop  <-  /home/will/Desktop/Jam-Fi.desktop
+desktop/HackRF-Tools.desktop  <-  /home/will/Desktop/HackRF-Tools.desktop
+desktop/Spam-Jam.desktop  <-  /home/will/Desktop/Spam-Jam.desktop
+desktop/WiFi-Cards.desktop  <-  /home/will/Desktop/WiFi-Cards.desktop
+desktop/WiFi-Pentest-Kit.desktop  <-  /home/will/Desktop/WiFi-Pentest-Kit.desktop
+desktop/Sniffer-USB-Manager.desktop  <-  /home/will/Desktop/Sniffer-USB-Manager.desktop
+desktop/GitHub-Launcher-Sync.desktop  <-  /home/will/Desktop/GitHub-Launcher-Sync.desktop
+desktop/ip-mac-changer.desktop  <-  /home/will/Desktop/ip-mac-changer.desktop
+desktop/Wifite.desktop  <-  /home/will/Desktop/Wifite.desktop
+desktop/IMSI-Catcher.desktop  <-  /home/will/Desktop/IMSI-Catcher.desktop
+desktop/grok-composer-2.5.desktop  <-  /home/will/Desktop/grok-composer-2.5.desktop
+desktop/kali-ubertooth-util.desktop  <-  /home/will/.local/share/applications/kali-ubertooth-util.desktop
+desktop/grok.desktop  <-  /home/will/.local/share/applications/grok.desktop
+desktop/wifi-pentest-kit.desktop  <-  /home/will/.local/share/applications/wifi-pentest-kit.desktop
+desktop/Bluetooth-Tools.desktop  <-  /home/will/.local/share/applications/Bluetooth-Tools.desktop
+desktop/grok-composer.desktop  <-  /home/will/.local/share/applications/grok-composer.desktop
+desktop/hackrf-tools.desktop  <-  /home/will/.local/share/applications/hackrf-tools.desktop
+desktop/tor-browser-new-identity.desktop  <-  /home/will/.local/share/applications/tor-browser-new-identity.desktop
+desktop/grok-yolo.desktop  <-  /home/will/.local/share/applications/grok-yolo.desktop
+desktop/ocr-image.desktop  <-  /home/will/.local/share/applications/ocr-image.desktop
+desktop/nRF-BLE-Pentest-Suite.desktop  <-  /home/will/.local/share/applications/nRF-BLE-Pentest-Suite.desktop
+desktop/gh-launcher-sync.desktop  <-  /home/will/.local/share/applications/gh-launcher-sync.desktop
+desktop/imsi-catcher.desktop  <-  /home/will/.local/share/applications/imsi-catcher.desktop
+desktop/Bettercap-BLE-Launcher.desktop  <-  /home/will/.local/share/applications/Bettercap-BLE-Launcher.desktop
+desktop/sdrtrunk.desktop  <-  /home/will/.local/share/applications/sdrtrunk.desktop
+desktop/ip-mac-changer.desktop  <-  /home/will/.local/share/applications/ip-mac-changer.desktop
+desktop/urh.desktop  <-  /home/will/.local/share/applications/urh.desktop
+desktop/tor-browser-onion.desktop  <-  /home/will/.local/share/applications/tor-browser-onion.desktop
+desktop/sniffer-usb-manager.desktop  <-  /home/will/.local/share/applications/sniffer-usb-manager.desktop
+desktop/nRF-Connect.desktop  <-  /home/will/.local/share/applications/nRF-Connect.desktop
+desktop/Bettercap-BLE-Pentest.desktop  <-  /home/will/.local/share/applications/Bettercap-BLE-Pentest.desktop
+desktop/grok-composer-2.5.desktop  <-  /home/will/.local/share/applications/grok-composer-2.5.desktop
+desktop/grok-build.desktop  <-  /home/will/.local/share/applications/grok-build.desktop
+
+Total launchers: 39

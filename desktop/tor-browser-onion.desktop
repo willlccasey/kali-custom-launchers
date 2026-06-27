@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor Browser
+GenericName=Anonymous Web Browser
+Comment=Launch Tor Browser with smart Tor bootstrap
+Exec=/home/will/.local/bin/tor-browser-onion
+Icon=/home/will/.local/share/icons/tor-browser-real.png
+Terminal=false
+Categories=Network;WebBrowser;Security;Privacy;
+StartupNotify=true
+StartupWMClass=Tor Browser
+Keywords=tor;onion;anonymous;privacy;browser;darknet;darkweb;torproject;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=NewIdentity;
+
+[Desktop Action NewIdentity]
+Name=Tor Browser
+Exec=/home/will/.local/bin/tor-browser-new-identity
+Icon=/home/will/.local/share/icons/tor-browser-real.png
