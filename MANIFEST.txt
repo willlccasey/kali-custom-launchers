@@ -1,4 +1,4 @@
-# Collected 2026-06-27T12:28:20-05:00 from will-Lenovo-V15-G2-IJL
+# Collected 2026-06-27T13:13:54-05:00 from will-Lenovo-V15-G2-IJL
 # Custom launchers (Exec/TryExec under /home/will)
 
 desktop/Chasing-Your-Tail-NG.desktop  <-  /home/will/Desktop/Chasing-Your-Tail-NG.desktop
