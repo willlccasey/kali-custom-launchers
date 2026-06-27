@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-exec /home/will/.local/bin/grok-launch \
-    --title "Grok Build" \
-    --workdir /home/will

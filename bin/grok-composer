@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-exec /home/will/.local/bin/grok-launch \
-    --title "Grok Composer 2.5" \
-    --workdir /home/will \
-    -- -m grok-composer-2.5-fast

@@ -1,133 +1,67 @@
-# App Catalog
+# App Catalog — Standalone Repos
 
-Desktop launchers and companion scripts collected from this Kali machine.  
-Each entry includes a plain-language description of what the app does.
-
-> **Note:** Some companion repos (`youtube-ripper`, `web-ripper`, `usb-drive-repair`) were created from a Linux Mint install and are documented separately — source not yet on this machine.
-
----
-
-## GitHub repositories
-
-| Repository | What it is |
-|---|---|
-| [kali-custom-launchers](https://github.com/willlccasey/kali-custom-launchers) | This repo — Kali desktop launchers + `~/bin` scripts |
-| [youtube-ripper](https://github.com/willlccasey/youtube-ripper) | YouTube video downloader (Linux Mint origin) |
-| [web-ripper](https://github.com/willlccasey/web-ripper) | Web page archiver / offline ripper (Linux Mint origin) |
-| [usb-drive-repair](https://github.com/willlccasey/usb-drive-repair) | USB drive repair and recovery toolkit (Linux Mint origin) |
-| [Kali-Youtube-ripper](https://github.com/willlccasey/Kali-Youtube-ripper) | Legacy YouTube ripper — superseded by `youtube-ripper` |
+Each launcher is its own GitHub repo. Clone one, run `./install.sh`, done.
 
 ---
 
 ## Wi-Fi / wireless
 
-| App | Launcher | What it does |
-|---|---|---|
-| **Wifite** | `Wifite.desktop` | Wi-Fi auditor — automated attacks plus offline handshake cracking without monitor mode. |
-| **Jam-Fi** | `Jam-Fi.desktop` | Wi-Fi chaos tool — deauth, evil twin, MITM, CVE exploits, Karma, auto-pwn. |
-| **WiFi Pentest Kit** | `WiFi-Pentest-Kit.desktop` | GUI for mehedishakeel/WiFi-Pentest-Kit — scanner, deauth, evil twin, beacon spam, handshake capture, WebUI simulator. |
-| **WiFi Cards** | `WiFi-Cards.desktop` | Lists all WiFi adapters; shows protected vs attack-ready cards with fix suggestions. |
-| **Network Reset** | `Network-Reset.desktop` | Resets network/monitor mode (ASUS-focused); brings cards down for a clean attack state. |
-| **Chasing Your Tail NG** | `Chasing-Your-Tail-NG.desktop` | Wi-Fi probe-request analyzer for surveillance/stalking detection — Kismet, GPS, persistence scoring, KML/Google Earth reports. |
-| **IP & MAC Changer** | `ip-mac-changer.desktop` | Menu-driven IP and MAC spoofing with rolling random mode. |
-
----
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| Wifite | [kali-wifite](https://github.com/willlccasey/kali-wifite) | `gh repo clone willlccasey/kali-wifite && cd kali-wifite && ./install.sh` | Wi-Fi auditor with offline handshake cracking |
+| Jam-Fi | [kali-jam-fi](https://github.com/willlccasey/kali-jam-fi) | `gh repo clone willlccasey/kali-jam-fi && cd kali-jam-fi && ./install.sh` | Deauth, evil twin, MITM, Karma, auto-pwn |
+| WiFi Pentest Kit | [kali-wifi-pentest-kit](https://github.com/willlccasey/kali-wifi-pentest-kit) | `gh repo clone willlccasey/kali-wifi-pentest-kit && cd kali-wifi-pentest-kit && ./install.sh` | Scanner, deauth, evil twin, beacon spam, handshake capture |
+| WiFi Cards | [kali-wifi-cards](https://github.com/willlccasey/kali-wifi-cards) | `gh repo clone willlccasey/kali-wifi-cards && cd kali-wifi-cards && ./install.sh` | List adapters; protected vs attack-ready |
+| Network Reset | [kali-network-reset](https://github.com/willlccasey/kali-network-reset) | `gh repo clone willlccasey/kali-network-reset && cd kali-network-reset && ./install.sh` | Reset monitor mode / bring WiFi cards down |
+| Chasing Your Tail NG | [kali-chasing-your-tail-ng](https://github.com/willlccasey/kali-chasing-your-tail-ng) | `gh repo clone willlccasey/kali-chasing-your-tail-ng && cd kali-chasing-your-tail-ng && ./install.sh` | Probe-request surveillance/stalking analyzer |
+| IP & MAC Changer | [kali-ip-mac-changer](https://github.com/willlccasey/kali-ip-mac-changer) | `gh repo clone willlccasey/kali-ip-mac-changer && cd kali-ip-mac-changer && ./install.sh` | Spoof IP and MAC addresses |
 
 ## SDR / radio / GSM
 
-| App | Launcher | What it does |
-|---|---|---|
-| **HackRF Tools** | `HackRF-Tools.desktop` | Numbered menu for HackRF One — kalibrate, gqrx, SDR++, inspectrum, GR-GSM scanner/livemon/decode, GSMTAP to Wireshark. |
-| **IMSI-Catcher** | `IMSI-Catcher.desktop` | GSM IMSI catcher menu — `simple_IMSI-catcher.py`, livemon, Wireshark; HackRF + gr-gsm friendly. |
-| **SDRTrunk** | `sdrtrunk.desktop` | Trunked radio scanner for P25, DMR, NXDN, and similar modes. |
-| **Universal Radio Hacker** | `urh.desktop` | Analyze, demodulate, and reverse-engineer wireless protocols. |
-
----
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| HackRF Tools | [kali-hackrf-tools](https://github.com/willlccasey/kali-hackrf-tools) | `gh repo clone willlccasey/kali-hackrf-tools && cd kali-hackrf-tools && ./install.sh` | HackRF menu — kalibrate, gqrx, GR-GSM, Wireshark |
+| IMSI-Catcher | [kali-imsi-catcher](https://github.com/willlccasey/kali-imsi-catcher) | `gh repo clone willlccasey/kali-imsi-catcher && cd kali-imsi-catcher && ./install.sh` | GSM IMSI catcher menu |
+| SDRTrunk | [kali-sdrtrunk](https://github.com/willlccasey/kali-sdrtrunk) | `gh repo clone willlccasey/kali-sdrtrunk && cd kali-sdrtrunk && ./install.sh` | Trunked radio launcher (P25, DMR, NXDN) |
+| Universal Radio Hacker | [kali-urh](https://github.com/willlccasey/kali-urh) | `gh repo clone willlccasey/kali-urh && cd kali-urh && ./install.sh` | URH desktop launcher |
 
 ## Bluetooth / BLE
 
-| App | Launcher | What it does |
-|---|---|---|
-| **Bluetooth Tools** | `Bluetooth-Tools.desktop` | Main Bluetooth pentest hub — numbered menu for btscanner, Kismet nRF, HackRF, sniffer manager, etc. |
-| **Spam Jam** | `Spam-Jam.desktop` | BLE & Bluetooth attack toolkit — spam, jam, L2Ping, RFCOMM, mesh botnet. |
-| **Bettercap BLE Launcher** | `Bettercap-BLE-Launcher.desktop` | Pick BT device (hci0 / Raytac-nRF / Ubertooth), then run bettercap BLE commands from a dropdown. |
-| **Bettercap BLE Pentest** | `Bettercap-BLE-Pentest.desktop` | Bettercap BLE module + web UI for scanning, enumeration, characteristic writes, MITM-style attacks. |
-| **nRF Connect** | `nRF-Connect.desktop` | Nordic Semiconductor GUI for BLE scanning and services/characteristics exploration. |
-| **nRF BLE Pentest Suite** | `nRF-BLE-Pentest-Suite.desktop` | One-click stack: nRF Connect, Bettercap, Wireshark/Kismet, crackle, BlueZ tools. |
-| **USB Manager** | `Sniffer-USB-Manager.desktop` | Switch between Ubertooth / Raytac-nRF / HackRF / onboard BT; one-click optimization and passwordless sudo. |
-| **ubertooth-util** | `kali-ubertooth-util.desktop` | Graphical menu for Ubertooth tools — prepare dongle, USB exclusive mode, hci setup. |
-
----
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| Bluetooth Tools | [kali-bluetooth-tools](https://github.com/willlccasey/kali-bluetooth-tools) | `gh repo clone willlccasey/kali-bluetooth-tools && cd kali-bluetooth-tools && ./install.sh` | Main Bluetooth pentest hub menu |
+| Spam Jam | [kali-spam-jam](https://github.com/willlccasey/kali-spam-jam) | `gh repo clone willlccasey/kali-spam-jam && cd kali-spam-jam && ./install.sh` | BLE spam, jam, L2Ping, RFCOMM |
+| Bettercap BLE | [kali-bettercap-ble](https://github.com/willlccasey/kali-bettercap-ble) | `gh repo clone willlccasey/kali-bettercap-ble && cd kali-bettercap-ble && ./install.sh` | Bettercap BLE CLI + web UI launchers |
+| nRF Connect | [kali-nrf-connect](https://github.com/willlccasey/kali-nrf-connect) | `gh repo clone willlccasey/kali-nrf-connect && cd kali-nrf-connect && ./install.sh` | Nordic nRF Connect GUI launcher |
+| nRF BLE Pentest | [kali-nrf-ble-pentest](https://github.com/willlccasey/kali-nrf-ble-pentest) | `gh repo clone willlccasey/kali-nrf-ble-pentest && cd kali-nrf-ble-pentest && ./install.sh` | Full nRF BLE pentest suite menu |
+| USB Sniffer Manager | [kali-sniffer-usb-manager](https://github.com/willlccasey/kali-sniffer-usb-manager) | `gh repo clone willlccasey/kali-sniffer-usb-manager && cd kali-sniffer-usb-manager && ./install.sh` | Switch Ubertooth / nRF / HackRF sniffers |
+| Ubertooth Util | [kali-ubertooth-util](https://github.com/willlccasey/kali-ubertooth-util) | `gh repo clone willlccasey/kali-ubertooth-util && cd kali-ubertooth-util && ./install.sh` | Ubertooth graphical tool menu |
 
 ## Privacy / Tor
 
-| App | Launcher | What it does |
-|---|---|---|
-| **Tor Browser** | `tor-browser-onion.desktop` | Launches Tor Browser with smart Tor bootstrap. |
-| **Tor Browser — New Identity** | `tor-browser-new-identity.desktop` | Launches Tor with a completely fresh circuit and identity. |
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| Tor Browser | [kali-tor-browser](https://github.com/willlccasey/kali-tor-browser) | `gh repo clone willlccasey/kali-tor-browser && cd kali-tor-browser && ./install.sh` | Tor Browser + new identity launchers |
 
----
+## Grok / AI
 
-## Grok / AI coding
-
-| App | Launcher | What it does |
-|---|---|---|
-| **Grok Build** | `grok-build.desktop` | Grok Build interactive coding agent (TUI). |
-| **Grok Composer 2.5** | `grok-composer-2.5.desktop` | Grok Build with Composer 2.5 Fast model. |
-| **Grok Build (YOLO)** | `grok-yolo.desktop` | Grok Build in always-approve / YOLO mode. |
-
----
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| Grok Launchers | [kali-grok-launchers](https://github.com/willlccasey/kali-grok-launchers) | `gh repo clone willlccasey/kali-grok-launchers && cd kali-grok-launchers && ./install.sh` | Grok Build, Composer 2.5, YOLO mode |
 
 ## Utilities
 
-| App | Launcher | What it does |
-|---|---|---|
-| **INTERCEPT** | `INTERCEPT.desktop` | One-click local web server for INTERCEPT — auto-opens browser, passwordless sudo, kills stale processes. |
-| **Viking GPS** | `Viking-GPS.desktop` | Live OpenStreetMap GPS tracker for u-blox USB via gpsd; installs Viking on first launch. |
-| **OCR Image** | `ocr-image.desktop` | Open a JPEG/image and copy recognized text to clipboard. |
-| **GitHub Launcher Sync** | `GitHub-Launcher-Sync.desktop` | Collects custom launchers/scripts and pushes to GitHub via `gh` CLI. |
+| App | Repo | Install | What it does |
+|---|---|---|---|
+| INTERCEPT | [kali-intercept](https://github.com/willlccasey/kali-intercept) | `gh repo clone willlccasey/kali-intercept && cd kali-intercept && ./install.sh` | RF monitoring web app, one-click launch |
+| Viking GPS | [kali-viking-gps](https://github.com/willlccasey/kali-viking-gps) | `gh repo clone willlccasey/kali-viking-gps && cd kali-viking-gps && ./install.sh` | Live GPS map for u-blox USB |
+| OCR Image | [kali-ocr-image](https://github.com/willlccasey/kali-ocr-image) | `gh repo clone willlccasey/kali-ocr-image && cd kali-ocr-image && ./install.sh` | Extract text from images |
+| GitHub Launcher Sync | [kali-github-launcher-sync](https://github.com/willlccasey/kali-github-launcher-sync) | `gh repo clone willlccasey/kali-github-launcher-sync && cd kali-github-launcher-sync && ./install.sh` | Publish/update launcher repos |
 
----
+## Linux Mint (separate)
 
-## Companion scripts (`bin/`)
-
-| Path | Powers |
+| App | Repo |
 |---|---|
-| `launch-hackrf-menu.sh` | HackRF Tools terminal menu |
-| `launch-imsi-catcher-menu.sh` | IMSI-Catcher menu |
-| `bluetooth-menu.sh` / `bluetooth-zenity.sh` | Bluetooth Tools GUI menus |
-| `bettercap-ble-launcher.sh` | Bettercap BLE Launcher |
-| `sniffer-usb-manager/` | USB Manager Python GUI + priv-helper |
-| `wifite-launcher/` | Wifite Python GUI |
-| `wifi-pentest-kit/` | WiFi Pentest Kit Python UI |
-| `jam-fi/` | Jam-Fi launcher |
-| `spam-jam/` | Spam Jam launcher |
-| `cyt-ng/` | Chasing Your Tail NG full project |
-| `viking-gps/` | Viking GPS launcher |
-| `ip-mac-changer.sh` | IP & MAC Changer |
-| `show-wifi-cards.sh` | WiFi Cards display |
-| `nrfconnect.sh` / `nrf-ble-pentest-menu.sh` | nRF Connect + BLE pentest suite |
-| `tor-browser-onion` / `tor-browser-new-identity` | Tor Browser launchers |
-| `ocr-image` | OCR image tool |
-| `gh-launcher-sync/` | GitHub sync scripts |
-| `grok-build` / `grok-composer` / `grok-launch` | Grok app wrappers |
-
----
-
-## On desktop, not yet in repo
-
-| App | What it does |
-|---|---|
-| **PortaPack SD Flash** | Flashes Mayhem v2.4.0 to PortaPack SD card (Morse + Hopper). |
-
----
-
-## Linux Mint tools (separate repos)
-
-These were set up from a Linux Mint install. Source code is not on this Kali machine yet.
-
-| Repo | Intended purpose |
-|---|---|
-| **youtube-ripper** | Download and save YouTube videos (audio/video formats). |
-| **web-ripper** | Archive web pages for offline viewing. |
-| **usb-drive-repair** | Diagnose, repair, partition, and recover USB drives. |
+| YouTube Ripper | [youtube-ripper](https://github.com/willlccasey/youtube-ripper) |
+| Web Ripper | [web-ripper](https://github.com/willlccasey/web-ripper) |
+| USB Drive Repair | [usb-drive-repair](https://github.com/willlccasey/usb-drive-repair) |

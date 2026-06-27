@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=nRF Connect for Desktop
-Comment=Nordic Semiconductor GUI for BLE device interaction, scanning, services/characteristics (excellent for pentest exploration)
-Exec=/home/will/bin/nrfconnect.sh %U
-Icon=bluetooth
-Terminal=false
-Type=Application
-Categories=Network;Utility;Development;
-StartupNotify=true
